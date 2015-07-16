@@ -1,0 +1,28 @@
+application: liuphp
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /images
+  static_dir: images
+
+- url: /convert
+  script: convert.php
+
+- url: /show
+  script: show.php
+
+- url: /getword
+  script: getword.php
+
+- url: /madlib
+  script: madlib.php
+
+- url: /
+  script: hello.php
